@@ -43,7 +43,7 @@ class UserProfile(AbstractBaseUser, PermissionsMixin):
     is_active = models.BooleanField(default=True)
     is_staff = models.BooleanField(default=False)
 
-    object = UserProfileManager()
+    objects = UserProfileManager()
 
     USERNAME_FIELD = 'email' #This is set as required by default as it is a username
     REQUIRED_FIELDS = ['name'] #Set required fields as a list of strings
