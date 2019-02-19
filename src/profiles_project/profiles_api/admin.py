@@ -4,3 +4,4 @@ from . import models
 
 # Register your models here.
 admin.site.register(models.UserProfile) #pass in created model, register with Django admin
+admin.site.register(models.ProfileFeedItem)
